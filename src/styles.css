@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  background-color: #E5E5E5;
+  margin: 0;
+  padding: 0;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.container {
+  width: 900px;
+  color: #3B3B3B;
+  margin: 0 auto; /* REVIEW: Temporary */
+}
+
+h1 {
+  font-family: Poppins, sans-serif;
+}
