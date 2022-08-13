@@ -1,0 +1,62 @@
+.resume-card {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  height: 184px; /* REVIEW: Temporary property */
+  margin-top: 60px; /* REVIEW: Temporary property */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5px 25px 10px 27px;
+}
+
+.resume-btn-group {
+  display: flex;
+}
+
+.resume-btn-group > div {
+  margin-right: 10px;
+}
+
+.orange-btn {
+  background-color: #F26C48;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 5px;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 10px 26px 10px 20px;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0px 4px 0px #C7401B;
+  border-radius: 5px;
+}
+
+.orange-btn:hover {
+   background-color: #EA6541;
+}
+
+.orange-hollow-btn {
+   background-color: transparent;
+   border: 2px solid #F26C48;
+   font-family: 'Roboto', sans-serif;
+   color: #F26C48;
+   border-radius: 5px;
+   padding: 10px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding: 10px 20px;
+   gap: 10px;
+   cursor: pointer;
+}
+
+.orange-hollow-btn:hover {
+  background-color: rgba(242, 108, 72, 0.1);
+}
+
+.course-info {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
