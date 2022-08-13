@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChapterCardComponent implements OnInit {
 
+  piePercentage!: number;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.piePercentage = Math.round(Math.random() * 100);
   }
 
 }

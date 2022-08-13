@@ -2,4 +2,7 @@
 <div class="container">
   <app-resume-course></app-resume-course>
   <h1>Temario</h1>
+  <div class="chapters-container">
+    <app-chapter-card *ngFor="let item of [0, 1, 2]" class="mr-20"></app-chapter-card>
+  </div>
 </div>
