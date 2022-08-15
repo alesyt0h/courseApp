@@ -1,0 +1,84 @@
+.session-container {
+  width: 673px; /* REVIEW: Temporary */
+  height: 506px; /* REVIEW: Temporary */
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.title-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: Roboto, sans-serif;
+  border-bottom: 2px solid #E0E0E0;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.sessions-completed {
+  background-color: #ED993F;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #F5F5F5;
+  display: flex;
+  font-size: 20px;
+}
+
+.session-list {
+  height: 77%;
+  overflow: auto;
+  padding: 0px;
+  margin-right: 5px;
+  padding-right: 5px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 10px 23px;
+  font-family: Roboto, sans-serif;
+}
+
+.next-session {
+  background-color: #F26C48;
+  color: #FFFFFF;
+}
+
+.next-session-btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.session-num {
+  font-weight: 700;
+  margin-right: 15px;
+}
+
+li.next-session {
+  padding: 7px 13px 7px 23px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
