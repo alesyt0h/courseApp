@@ -1,6 +1,9 @@
 header {
-  display: flex;
   background-color: #00AEA4;
+}
+
+header > div{
+  display: flex;
   justify-content: space-between;
   height: 90px;
   font-family: 'Poppins', sans-serif;
