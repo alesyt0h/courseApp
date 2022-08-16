@@ -23,6 +23,7 @@
   flex-direction: column;
   height: 100%;
   gap: 80px;
+  position: relative;
 }
 
 .language-dropdown {
@@ -107,3 +108,5 @@ label {
   flex: 2;
   align-self: center;
 }
+
+

@@ -23,7 +23,7 @@ html, body {
 .container {
   width: 950px;
   color: #3B3B3B;
-  margin: 0 auto; /* REVIEW: Temporary */
+  margin: 0 auto;
 }
 
 h1 {
@@ -36,4 +36,85 @@ h3 {
 
 .hidden {
   display: none;
+}
+
+/* Dropdown Styling */
+
+.dropdown-wrapper {
+  outline: none;
+  width: 333px;
+  height: 54px;
+  color: #1E1E1E;
+  mix-blend-mode: normal;
+  /* opacity: 0.76; */
+  border: 1px solid #00000065;
+  display: flex !important;
+  justify-content: center;
+}
+
+.dropdown-wrapper:focus {
+  border: 1px solid #00AEA4;
+}
+
+.option:hover  {
+  background-color: #E5E5E5;
+}
+.option {
+  padding: 0.8em;
+  border-bottom: 1px solid rgb(206, 205, 201);
+  text-decoration: none;
+  color: #1E1E1E;
+}
+
+.option {
+  padding-left: 15px;
+}
+
+.option:first-child {
+  border-left: 4px solid #00AEA4;
+  font-weight: 700;
+}
+
+.option:not(:first-of-type){
+  padding-left: 20px;
+}
+
+.dropdown {
+  width: 101%;
+  left: -2px !important;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  border-radius: 0 0 5px 5px;
+  border: 1px solid rgb(206, 205, 201);
+  border-top: none;
+  box-sizing: border-box;
+  max-height: 400px;
+  border-bottom: 1px solid rgb(206, 205, 201);
+}
+
+
+.caret::after {
+  content: url("data:image/svg+xml,%3Csvg width='13' height='8' viewBox='0 0 13 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.70492 0.294983L6.29492 4.87498L10.8849 0.294983L12.2949 1.70498L6.29492 7.70498L0.294922 1.70498L1.70492 0.294983Z' fill='%23A9A9A9'/%3E%3C/svg%3E%0A");
+}
+
+span#caret{
+  margin-right: 10px;
+}
+
+.popup {
+  z-index: 10000;
+  background-color: #DCFCE7;
+  width: 181px;
+  border: 5px solid #BBF7D0;
+  /* position: absolute; */
+  font-family: Roboto, sans-serif;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 700;
+  /* top: 40px;
+  right: 50%; */
+  margin: 0 auto;
+  transition: all 0.5s ease;
 }

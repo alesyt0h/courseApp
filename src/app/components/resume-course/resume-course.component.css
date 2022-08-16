@@ -1,8 +1,8 @@
 .resume-card {
   background-color: #FFFFFF;
   border-radius: 10px;
-  height: 184px; /* REVIEW: Temporary property */
-  margin-top: 60px; /* REVIEW: Temporary property */
+  height: 184px;
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

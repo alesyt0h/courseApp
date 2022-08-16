@@ -15,7 +15,6 @@ export class HeaderComponent implements OnInit {
   hider(){
     const settingsPane = document.querySelector('app-settings');
 
-    console.log(settingsPane)
     settingsPane?.classList.toggle('hidden');
   }
 
