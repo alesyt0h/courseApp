@@ -12,4 +12,10 @@ export class SettingsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  hider(){
+    const settingsPane = document.querySelector('app-settings');
+
+    settingsPane?.classList.toggle('hidden');
+  }
+
 }
