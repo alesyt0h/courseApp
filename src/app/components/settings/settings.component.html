@@ -1,1 +1,41 @@
-<p>settings works!</p>
+<div class="blur-bg">
+  <div class="settings-container">
+    <div class="settings-flex">
+      <div class="title-group">
+        <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="pointer" id="back">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M10.1338 17.3839C9.64567 17.872 8.85422 17.872 8.36606 17.3839L0.866126 9.88388C0.377976 9.39572 0.377976 8.60427 0.866126 8.11612L8.36606 0.616118C8.85422 0.127963 9.64567 0.127959 10.1338 0.616112C10.622 1.10426 10.622 1.89572 10.1338 2.38388L4.76776 7.75L24.25 7.75C24.9404 7.75 25.5 8.30964 25.5 9C25.5 9.69036 24.9404 10.25 24.25 10.25L4.76776 10.25L10.1338 15.6161C10.622 16.1043 10.622 16.8957 10.1338 17.3839Z" fill="#4F4F4F"/>
+        </svg>
+        <h1 class="title-text mr-40">
+          Configuración
+        </h1>
+        <div class="flex-trick"></div>
+      </div>
+      <!-- Dropdowns -->
+      <div class="dropdowns">
+        <div class="language-dropdown">
+          <label for="language">Idioma</label>
+          <select id="language" name="language">
+            <option value="spanish">Español</option>
+            <option value="english">Inglés</option>
+            <option value="french">Francés</option>
+          </select>
+        </div>
+        <div class="course-dropdown">
+          <label for="course">Curso</label>
+          <select id="course" name="course">
+            <option value="third">3º de infantil</option>
+            <option value="fourth">4º de infantil</option>
+            <option value="fifth">5º de infantil</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <div class="save-btn">
+          <div>Guardar cambios</div>
+        </div>
+        <a href="#" class="no-save">Cerrar sin guardar</a>
+      </div>
+    </div>
+  </div>
+</div>

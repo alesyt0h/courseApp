@@ -1,0 +1,109 @@
+.blur-bg {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(59, 59, 59, 0.5);
+  backdrop-filter: blur(4px);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.settings-container {
+  background-color: #FFFFFF;
+  width: 576px;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.25);
+}
+
+.settings-flex {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 80px;
+}
+
+.language-dropdown {
+  font-family: Roboto, sans-serif;
+  position: relative;
+}
+
+.course-dropdown {
+  font-family: Roboto, sans-serif;
+  position: relative;
+}
+
+.title-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.title-text {
+  color: #3b3b3b;
+}
+
+select {
+  width: 335px;
+  height: 56px;
+  color: #1E1E1E;
+  mix-blend-mode: normal;
+  opacity: 0.76;
+  border: 1px solid #00000065;
+}
+
+label {
+  color: #ADAFB4;
+  font-weight: 700;
+  border: 2px solid #FFFFFF;
+  position: absolute;
+  top: -9px;
+  left: 5px;
+  z-index: 1000;
+  background-color: #ffffff;
+}
+
+.save-btn {
+  background-color: #F26C48;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 5px;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 10px 70px;
+  font-size: 20px;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0px 4px 0px #C7401B;
+  width: fit-content;
+}
+
+.save-btn:hover {
+   background-color: #EA6541;
+}
+
+.btn-group {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  flex: 1;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.no-save {
+  color: #3B3B3B;
+}
+
+.dropdowns {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  flex: 2;
+  align-self: center;
+}

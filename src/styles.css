@@ -12,6 +12,10 @@ html, body {
   margin-right: 20px;
 }
 
+.mr-40 {
+  margin-right: 40px;
+}
+
 .pointer {
   cursor: pointer;
 }
