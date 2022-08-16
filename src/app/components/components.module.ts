@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { ChapterCardComponent } from './chapter-card/chapter-card.component';
 import { ResumeCourseComponent } from './resume-course/resume-course.component';
@@ -16,7 +17,8 @@ import { SettingsComponent } from './settings/settings.component';
     SettingsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     ChapterCardComponent,

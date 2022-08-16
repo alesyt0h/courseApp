@@ -1,4 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
+import { ChaptersService } from '../../services/chapters.service';
+
+import { Session } from '../../interfaces/sessions.interface';
+import { Chapter } from 'src/app/interfaces/chapters.interface';
 
 @Component({
   selector: 'app-chapter-card',
@@ -8,11 +13,17 @@ import { Component, OnInit } from '@angular/core';
 export class ChapterCardComponent implements OnInit {
 
   piePercentage!: number;
+  sessions!: Session[];
+  @Input() chapter!: Chapter;
 
-  constructor() { }
+  constructor(private _cs: ChaptersService) { }
 
   ngOnInit(): void {
-    this.piePercentage = Math.round(Math.random() * 100);
+
+    this._cs.sessionsByChapterId(this.chapter.id).subscribe(sessions => {
+      this.sessions = sessions;
+      this.piePercentage = this.chapter.sessionsCompleted / this.sessions.length * 100;
+    });
   }
 
 }
