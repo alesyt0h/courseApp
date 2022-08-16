@@ -45,7 +45,7 @@ export class SettingsComponent implements OnInit {
     div.innerHTML = 'Cambios guardados';
     div.classList.add('popup');
 
-    const titleGroup = document.querySelector('.title-group');
+    const titleGroup = document.querySelector('.settings-container .title-group');
 
     titleGroup?.after(div);
 
