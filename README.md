@@ -1,27 +1,33 @@
-# TekmanTest
+# Requisitos 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.5.
+Para esta aplicación se ha utilizado [`json-server`](https://github.com/typicode/json-server)
 
-## Development server
+Debe ser instalado para que la aplicación funcione correctamente.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+`npm i -g json-server`
 
-## Code scaffolding
+# Inicio del **json-server**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+El proyecto contiene un archivo `db/db.json` que hará de servidor que contiene la data.
 
-## Build
+Deberemos iniciar primeramente el servidor usando 
+`json-server --watch db/db.json`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Inicio de **Angular**
 
-## Running unit tests
+Se deberá ejecutar primeramente `npm install` desde la raíz del proyecto para que se instalen los modulos de **node**.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Posteriormente `ng serve -o` abrirá una nueva pestaña en el navegador con la aplicación de Angular.
 
-## Running end-to-end tests
+# Resumen
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Se ha utilizado un **json-server** para emular una aplicación real donde la información recibida no es estática y se asemeje a una aplicación que nos encontramos en el día a día.
 
-## Further help
+Algunas propiedades del archivo `db.json` no son muy extensas y podrían ser ampliadas, pero para el objetivo de la prueba, cumplen su función.
+Por ejemplo, faltaría una categoría de `courses`, para poder englobar ahí todos los **capítulos** y **sesiones**.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+No se ha usado ningún sistema de **branches** puesto que la aplicación es muy sencilla para requerirlo.
+
+No hay un CRUD completo en la aplicación puesto que no quería aumentar de complejidad aún más la aplicación, así como no hay testeos unitarios ni de integración por el mismo motivo.
+
+El funcionamiento es simple e intuitivo, tal y como se muestra en los flows de Figma.
